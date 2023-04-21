@@ -15,4 +15,4 @@ time.o: time.cpp time.h
 	g++ -c -std=c++11 time.cpp
 
 clean:
-	rm -f main.o time.o tests.o
+	rm -f main.o time.o tests.o main tests

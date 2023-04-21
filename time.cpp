@@ -95,22 +95,3 @@ bool timeOverlap(TimeSlot ts1, TimeSlot ts2)
     }
     return false; // if there is no overlap between the two time slots
 }
-
-int main()
-{
-    Time t1;
-    t1.hour = 10;
-    t1.minute = 30;
-
-    Time t2;
-    t2.hour = 11;
-    t2.minute = 30;
-
-    std::cout << minutesSinceMidnight(t1) << std::endl;
-    std::cout << minutesSinceMidnight(t2) << std::endl;
-    std::cout << minutesUntil(t1, t2) << std::endl;
-    Time t3 = addMinutes(t1, 75);
-    std::cout << t3.hour << ":" << t3.minute << std::endl;
-
-    return 0;
-}
